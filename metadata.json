@@ -1,0 +1,5 @@
+{
+  "name": "Social Data Analyser API",
+  "description": "A backend API that analyzes social data from GitHub and Reddit.",
+  "requestFramePermissions": []
+}

@@ -1,0 +1,31 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model GithubIssue {
+  id          String  @id @map("_id")
+  title       String
+  body        String?
+  comments    Int
+  author      String
+  repo        String
+  url         String
+  createdAt   DateTime
+  fetchedAt   DateTime @default(now())
+}
+
+model RedditPost {
+  id        String @id
+  title     String
+  author    String
+  subreddit String
+  score     Int
+  url       String
+  createdAt DateTime
+  fetchedAt DateTime @default(now())
+}

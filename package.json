@@ -1,0 +1,21 @@
+{
+  "name": "social-data-analyser",
+  "version": "1.0.0",
+  "description": "A backend API that analyzes social data from GitHub and Reddit.",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "axios": "^1.7.2",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.12.12",
+    "typescript": "^5.4.5"
+  }
+}
